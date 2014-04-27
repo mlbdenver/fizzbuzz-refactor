@@ -1,0 +1,193 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:400,300italic|Special+Elite|Chewy|Open+Sans);
+/*Notes
+
+Determine if flexbox is necessary
+Make list stack under input (image disappears) on phone screen
+*/
+/*--------CSS RESET ---------- */
+
+/* 
+html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:62.5%;
+    vertical-align:baseline;
+    background:transparent;
+}
+body {
+    line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+ul {
+    list-style:none;
+}
+blockquote, q {
+    quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+a {
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+    background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+input, select {
+    vertical-align:middle;
+}
+
+/*--------Beginning of Site CSS---------- */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ /*---Use for site building --- 
+
+div {
+  border:1px red solid;
+  } */
+
+body {
+  width:100%;
+  margin: 0;
+  padding:0;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size:1.8rem;
+  background-color: #2f2f35;
+}
+
+h1 {
+    font-size: 6rem;
+    font-family: chewy, Arial, sans-serif;
+  }
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+p {
+  font-size:1.8rem;
+  line-height: 2rem;
+}
+
+.banner {
+  height: 120px;
+  width: 100%;
+  background: radial-gradient(#414146, #2f2f35);
+  padding: 24px 20px;
+  text-align: center;
+  color: #a7174a;
+}
+
+.jazz {
+  font-family: "Special Elite", Arial, Sans-serif;
+  }
+
+#main {
+  margin-top: 24px;
+  text-align: center;
+  color: #f5d0d5;
+}
+
+#stop {
+  font-size: 1.4rem;
+  height: 3rem;
+  width: 150px;
+  line-height: 30px;
+  border: 1px #bbb solid;
+  background-color: white;
+  margin: 5px auto 0 auto; 
+  list-style: none;
+  padding: .5rem 6px;
+  text-align: left;
+  border-radius: 4px;
+  box-shadow: inset 0 3px 8px #ccc;
+}
+#stop:focus {
+  outline: none;
+}
+
+#button {
+  cursor: pointer;
+  font-size: 1.4rem;
+  padding: .3rem .3rem;
+  height: 2.6rem;
+  width: 50px;
+  line-height: 2.0rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #b92e63;
+  margin: 10px auto; 
+  text-align: center;
+  vertical-align: middle;
+  color: white;
+}
+
+#button:hover {
+  background-color: #a7174a;
+}
+
+.output p {
+  text-align: center;
+  color: #b92e63;
+}
