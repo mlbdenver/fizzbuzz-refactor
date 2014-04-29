@@ -1,6 +1,7 @@
 $(document).ready(function () {
     $("#stop").focus();
     function fizz() {
+        $(".output p").remove();
         var entry = $('#stop').val();
         if (isNaN(+entry) ===true) {
             alert("Please enter a number");
@@ -9,6 +10,7 @@ $(document).ready(function () {
             alert("Your number must be positive!");
             //$("#stop").val('');
             //$("#stop").focus();
+
         }
         var endNum = Math.floor(+entry);
         for (var n=1;n<=endNum;n++) {
